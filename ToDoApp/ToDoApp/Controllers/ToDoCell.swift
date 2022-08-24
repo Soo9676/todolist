@@ -7,12 +7,23 @@
 
 import UIKit
 
-protocol UpdateButtonProtocol: AnyObject {
-    func updateButtonTapped(cell: ToDoCell)
-}
+class ToDoCell: UITableViewCell {
 
-class ToDoCell: UICollectionViewCell {
-    
-    @IBAction func updateButton(_ sender: Any) {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
     }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
+    
+    @IBOutlet weak var toDoView: UIView!
+    @IBOutlet weak var toDoTextLabel: UILabel!
+    @IBOutlet weak var toDoDateLabel: UILabel!
+    @IBOutlet weak var updateButton: UIButton!
+    
+
 }

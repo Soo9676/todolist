@@ -6,7 +6,19 @@
 //
 
 import Foundation
+import UIKit
 
-class DetailViewController {
+class DetailViewController: UIViewController {
+    
+    @IBOutlet weak var colorButtonStack: UIStackView!
+    @IBOutlet weak var redButton: UIButton!
+    @IBOutlet weak var greenButton: UIButton!
+    @IBOutlet weak var blueButton: UIButton!
+    @IBOutlet weak var yellowButton: UIButton!
+    
+    @IBOutlet weak var toDoTextView: UITextView!
+    
+    @IBOutlet weak var updateButton: UIButton!
+    
     
 }

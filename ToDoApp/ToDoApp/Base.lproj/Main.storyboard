@@ -31,7 +31,7 @@
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="ToDoApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="ToDoApp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,7 +40,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="wwx-R4-h6h" userLabel="ToDoCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="wwx-R4-h6h" userLabel="ToDoCell" customClass="ToDoCell" customModule="ToDoApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="100.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wwx-R4-h6h" id="NqC-el-P7B">
@@ -71,7 +71,7 @@
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6I6-f6-XsW">
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6I6-f6-XsW" customClass="ToDo">
                                                                             <rect key="frame" x="286.5" y="0.0" width="77.5" height="30"/>
                                                                             <state key="normal" title="Button"/>
                                                                             <buttonConfiguration key="configuration" style="plain" title="UPDATE"/>
@@ -118,6 +118,11 @@
                                                 <constraint firstAttribute="bottom" secondItem="Bdq-e6-Hdr" secondAttribute="bottom" constant="10" id="gej-su-cIz"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="toDoDateLabel" destination="ZB1-co-VbM" id="LUK-GE-Wff"/>
+                                            <outlet property="toDoTextLabel" destination="Fer-Z7-dIy" id="2AQ-l5-O0w"/>
+                                            <outlet property="toDoView" destination="Bdq-e6-Hdr" id="wKg-xp-reG"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -224,6 +229,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ogm-mk-c9c"/>
+                    <connections>
+                        <outlet property="blueButton" destination="x4H-i8-xmU" id="Vbp-1w-muQ"/>
+                        <outlet property="colorButtonStack" destination="SLV-g0-ALu" id="B8H-k4-zIT"/>
+                        <outlet property="greenButton" destination="416-br-oYG" id="KUZ-N3-q0k"/>
+                        <outlet property="redButton" destination="EiF-pG-Us4" id="pbj-ps-PAE"/>
+                        <outlet property="toDoTextView" destination="0wQ-9j-1av" id="f0X-aD-Kgq"/>
+                        <outlet property="updateButton" destination="9mg-0f-4Tl" id="a07-lI-Or5"/>
+                        <outlet property="yellowButton" destination="0lv-ia-z7N" id="azP-tr-fja"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tzy-KZ-6gn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
