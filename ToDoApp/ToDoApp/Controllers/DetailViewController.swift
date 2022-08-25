@@ -20,5 +20,13 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var updateButton: UIButton!
     
+    lazy var buttons: [UIButton] = {
+        return [redButton, greenButton, blueButton, yellowButton]
+    }()
+    
+    let toDoManager = CoreDataManager.shared
+    
+    
+    
     
 }

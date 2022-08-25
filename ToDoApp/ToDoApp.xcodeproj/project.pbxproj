@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6F8F69CC28B60EDD003851BB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8F69CB28B60EDD003851BB /* DetailViewController.swift */; };
 		6F8F69D428B61BA8003851BB /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8F69D328B61BA8003851BB /* ToDoCell.swift */; };
+		6F8F69D628B70C32003851BB /* MyColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8F69D528B70C32003851BB /* MyColor.swift */; };
+		6F8F69D828B70C5D003851BB /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8F69D728B70C5D003851BB /* UIColor+Extension.swift */; };
 		6FFB1B7928B45F16003BE9F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFB1B7828B45F16003BE9F8 /* AppDelegate.swift */; };
 		6FFB1B7B28B45F16003BE9F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFB1B7A28B45F16003BE9F8 /* SceneDelegate.swift */; };
 		6FFB1B7D28B45F16003BE9F8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFB1B7C28B45F16003BE9F8 /* MainViewController.swift */; };
@@ -24,6 +26,8 @@
 /* Begin PBXFileReference section */
 		6F8F69CB28B60EDD003851BB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		6F8F69D328B61BA8003851BB /* ToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
+		6F8F69D528B70C32003851BB /* MyColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColor.swift; sourceTree = "<group>"; };
+		6F8F69D728B70C5D003851BB /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		6FFB1B7528B45F16003BE9F8 /* ToDoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FFB1B7828B45F16003BE9F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FFB1B7A28B45F16003BE9F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,13 +75,13 @@
 				6FFB1B7A28B45F16003BE9F8 /* SceneDelegate.swift */,
 				6FFB1B7828B45F16003BE9F8 /* AppDelegate.swift */,
 				6FFB1B9528B4676D003BE9F8 /* Extensions */,
+				6FFB1B9328B46136003BE9F8 /* Models */,
 				6FFB1B9428B461B3003BE9F8 /* Controllers */,
 				6FFB1B7E28B45F16003BE9F8 /* Main.storyboard */,
 				6FFB1B8428B45F18003BE9F8 /* Assets.xcassets */,
 				6FFB1B8628B45F18003BE9F8 /* LaunchScreen.storyboard */,
 				6FFB1B8928B45F18003BE9F8 /* Info.plist */,
 				6FFB1B8128B45F16003BE9F8 /* ToDoApp.xcdatamodeld */,
-				6FFB1B9328B46136003BE9F8 /* Models */,
 			);
 			path = ToDoApp;
 			sourceTree = "<group>";
@@ -105,6 +109,8 @@
 		6FFB1B9528B4676D003BE9F8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				6F8F69D528B70C32003851BB /* MyColor.swift */,
+				6F8F69D728B70C5D003851BB /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -183,8 +189,10 @@
 				6FFB1B9228B4603B003BE9F8 /* MemoData+CoreDataProperties.swift in Sources */,
 				6FFB1B7D28B45F16003BE9F8 /* MainViewController.swift in Sources */,
 				6FFB1B7928B45F16003BE9F8 /* AppDelegate.swift in Sources */,
+				6F8F69D828B70C5D003851BB /* UIColor+Extension.swift in Sources */,
 				6FFB1B7B28B45F16003BE9F8 /* SceneDelegate.swift in Sources */,
 				6FFB1B9128B4603B003BE9F8 /* MemoData+CoreDataClass.swift in Sources */,
+				6F8F69D628B70C32003851BB /* MyColor.swift in Sources */,
 				6FFB1B9728B46873003BE9F8 /* CoreDataManager.swift in Sources */,
 				6FFB1B8328B45F16003BE9F8 /* ToDoApp.xcdatamodeld in Sources */,
 				6F8F69D428B61BA8003851BB /* ToDoCell.swift in Sources */,

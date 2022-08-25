@@ -138,8 +138,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="wGc-fP-TRE"/>
                     <connections>
+                        <outlet property="tableView" destination="VL9-l2-84h" id="aMo-v7-Xeh"/>
                         <outlet property="toDoTableView" destination="VL9-l2-84h" id="bdd-Db-Vg3"/>
-                        <segue destination="BPH-4O-JGu" kind="push" id="sTP-Kg-tBF"/>
+                        <segue destination="BPH-4O-JGu" kind="push" identifier="goToDetail" id="sTP-Kg-tBF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
