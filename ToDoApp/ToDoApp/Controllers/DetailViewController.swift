@@ -139,6 +139,13 @@ class DetailViewController: UIViewController {
             memoData.memoText = toDoTextView.text
             memoData.color = tempColor ?? 1
             toDoManager.updateToDo(newToDoData: memoData) {
+                print("updated successfully")
+                self.navigationController?.popViewController(animated: true)
+            }
+        } else {
+            let memoText = toDoTextView.text
+            toDoManager.saveToDoData(toDoText: memoText, colorInt: tempColor ?? 1) {
+                print("저장완료")
                 self.navigationController?.popViewController(animated: true)
             }
         }

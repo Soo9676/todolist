@@ -23,7 +23,7 @@ class ToDoCell: UITableViewCell {
     @IBOutlet weak var toDoView: UIView!
     @IBOutlet weak var toDoTextLabel: UILabel!
     @IBOutlet weak var toDoDateLabel: UILabel!
-    @IBOutlet weak var updateButton: UIButton!
+    @IBOutlet weak var updateBtn: UIButton!
     
     // ToDoData를 전달받을 변수 (전달 받으면 ==> 표시하는 메서드 실행) ⭐️
     var MemoData: MemoData? {
@@ -42,8 +42,8 @@ class ToDoCell: UITableViewCell {
         toDoView.clipsToBounds = true
         toDoView.layer.cornerRadius = 8
 
-        updateButton.clipsToBounds = true
-        updateButton.layer.cornerRadius = 10
+        updateBtn.clipsToBounds = true
+        updateBtn.layer.cornerRadius = 10
     }
     
     // 데이터를 가지고 적절한 UI 표시하기
@@ -52,8 +52,12 @@ class ToDoCell: UITableViewCell {
         toDoDateLabel.text = MemoData?.dateString
         guard let colorNum = MemoData?.color else { return }
         let color = MyColor(rawValue: colorNum) ?? .red
-        updateButton.backgroundColor = color.buttonColor
+        updateBtn.backgroundColor = color.buttonColor
         toDoView.backgroundColor = color.backgoundColor
+    }
+    
+    @IBAction func updateBtnTapped(_ sender: UIButton) {
+        updateButtonPressed(self)
     }
 
 }
