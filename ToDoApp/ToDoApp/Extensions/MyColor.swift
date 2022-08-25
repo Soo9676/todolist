@@ -12,7 +12,7 @@ enum MyColor: Int64 {
     case red    = 1
     case green  = 2
     case blue   = 3
-    case purple = 4
+    case yellow = 4
     
     var backgoundColor: UIColor {
         switch self {
@@ -25,7 +25,7 @@ enum MyColor: Int64 {
         case .blue:
             //UIColor(hexString: "#C4E4F2")
             return UIColor(red: 196/255, green: 228/255, blue: 242/255, alpha: 1)
-        case .purple:
+        case .yellow:
             //UIColor(hexString: "#D4D4F5")
             return UIColor(red: 212/255, green: 212/255, blue: 245/255, alpha: 1)
         }
@@ -39,7 +39,7 @@ enum MyColor: Int64 {
             return UIColor(red: 89/255, green: 190/255, blue: 183/255, alpha: 1)
         case .blue:
             return UIColor(red: 88/255, green: 181/255, blue: 236/255, alpha: 1)
-        case .purple:
+        case .yellow:
             return UIColor(red: 118/255, green: 103/255, blue: 228/255, alpha: 1)
         }
     }

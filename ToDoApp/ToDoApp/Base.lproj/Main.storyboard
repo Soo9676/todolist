@@ -159,25 +159,37 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SLV-g0-ALu">
                                 <rect key="frame" x="25" y="98" width="364" height="35"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EiF-pG-Us4">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EiF-pG-Us4">
                                         <rect key="frame" x="0.0" y="0.0" width="67" height="35"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="tapColorButton:" destination="BPH-4O-JGu" eventType="touchUpInside" id="H52-3W-b6v"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="416-br-oYG">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="416-br-oYG">
                                         <rect key="frame" x="99" y="0.0" width="67" height="35"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="tapColorButton:" destination="BPH-4O-JGu" eventType="touchUpInside" id="Icl-Yk-YMz"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4H-i8-xmU">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4H-i8-xmU">
                                         <rect key="frame" x="198" y="0.0" width="67" height="35"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="tapColorButton:" destination="BPH-4O-JGu" eventType="touchUpInside" id="Z8o-8I-Sel"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lv-ia-z7N">
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lv-ia-z7N">
                                         <rect key="frame" x="297" y="0.0" width="67" height="35"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="tapColorButton:" destination="BPH-4O-JGu" eventType="touchUpInside" id="KBG-Mb-OJd"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -212,6 +224,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="updateButtonTapped:" destination="BPH-4O-JGu" eventType="touchUpInside" id="SLl-cq-pFs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xae-8P-CyI"/>
@@ -235,6 +250,7 @@
                         <outlet property="colorButtonStack" destination="SLV-g0-ALu" id="B8H-k4-zIT"/>
                         <outlet property="greenButton" destination="416-br-oYG" id="KUZ-N3-q0k"/>
                         <outlet property="redButton" destination="EiF-pG-Us4" id="pbj-ps-PAE"/>
+                        <outlet property="toDoBgView" destination="NOP-hJ-nrq" id="wdU-Px-35H"/>
                         <outlet property="toDoTextView" destination="0wQ-9j-1av" id="f0X-aD-Kgq"/>
                         <outlet property="updateButton" destination="9mg-0f-4Tl" id="a07-lI-Or5"/>
                         <outlet property="yellowButton" destination="0lv-ia-z7N" id="azP-tr-fja"/>
