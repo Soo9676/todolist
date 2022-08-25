@@ -26,8 +26,8 @@ enum MyColor: Int64 {
             //UIColor(hexString: "#C4E4F2")
             return UIColor(red: 196/255, green: 228/255, blue: 242/255, alpha: 1)
         case .yellow:
-            //UIColor(hexString: "#D4D4F5")
-            return UIColor(red: 212/255, green: 212/255, blue: 245/255, alpha: 1)
+            //UIColor(hexString: "#F5FFB2")
+            return UIColor(red: 245/255, green: 255/255, blue: 178/255, alpha: 1)
         }
     }
     
@@ -40,7 +40,7 @@ enum MyColor: Int64 {
         case .blue:
             return UIColor(red: 88/255, green: 181/255, blue: 236/255, alpha: 1)
         case .yellow:
-            return UIColor(red: 118/255, green: 103/255, blue: 228/255, alpha: 1)
+            return UIColor(red: 255/255, green: 251/255, blue: 0/255, alpha: 1)
         }
     }
     

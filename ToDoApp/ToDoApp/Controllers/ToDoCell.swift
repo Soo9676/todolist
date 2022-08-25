@@ -11,7 +11,8 @@ class ToDoCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        configureUI()
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

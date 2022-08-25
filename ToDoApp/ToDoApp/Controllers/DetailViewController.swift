@@ -70,7 +70,7 @@ class DetailViewController: UIViewController {
             toDoTextView.text = text
             
             toDoTextView.textColor = .black
-            updateButton.setTitle("UPDATE", for: .normal)
+            updateButton.setTitle("MODIFY", for: .normal)
             toDoTextView.becomeFirstResponder()
             let color = MyColor(rawValue: memoData.color)
             setupColorTheme(color: color)
